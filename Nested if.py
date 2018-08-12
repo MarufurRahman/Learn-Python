@@ -1,8 +1,7 @@
-# In this program, we input a number
+# In this program, input a number
 # check if the number is positive or
 # negative or zero and display
 # an appropriate message
-# This time we use nested if
 
 num = float(input("Enter a number: "))
 if num >= 0:
