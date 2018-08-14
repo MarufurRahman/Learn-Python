@@ -1,17 +1,18 @@
 # Create classes and objects.
 # Programmed by Marufur Rahman.
 
-class Students:  # Create a class.
-    def introduce_self(self):
-        print('My name is ' + self.name)
+class Students:  # Create class.
+	def __init__(self, name, skill, weight): 
+		# Method of this class
+		self.name = name
+		self.skill = skill
+		self.weight = weight
+	def introduce_self(self):  
+		# Another method of this class
+		print("My name is " + self.name)
 
-a1 = Students() # Create an object.
-a1.name = 'Kayem'
-a1.weight = 55
+s1 = Students('Kayem', 'Python', 55) # Create an object
+s2 = Students('Kamal', 'PHP', 67) # Create another object
 
-a2 = Students() # Create another object
-a2.name = 'Towhid'
-a2.weight = 60
-
-a1.introduce_self()
-a2.introduce_self()
+s1.introduce_self()
+s2.introduce_self()
